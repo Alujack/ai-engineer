@@ -217,139 +217,138 @@ index.html    style.css    images/    scripts/
 $ ls -la
 ```
 
-##### `cd` — Change Directory (ផ្លាស់ទី Location)
 
 ```bash
-$ cd Documents          # ចូលទៅ Folder មួorg org org org
-$ cd ..                 # org org org org org org org org 1 Level
-$ cd ~                  # org org org org org org org org org org Home Directory
-$ cd /Users/student     # org org org org org org org org org org Full Path
+$ cd Documents          # ចូលទៅ Folder មួយ
+$ cd ..                 # ថយក្រោយ 1 Level
+$ cd ~                  # ត្រឡាត់ទៅ Home Directory
+$ cd /Users/student     # ចូលដោយប្រើ Full Path
 ```
 
 ```
-🚶 cd ដorg org org org org org org org org org org org org org org org org org org org org org org org org org org:
-   cd Documents = ដorg org org org org org org org org org org org org Documents
-   cd ..        = org org org org org org org org org org org org org org org org org org org
-   cd ~         = org org org org org org org org org org org org org (Home)
+🚶 cd ដូចជាការដើរចូលបន្តាត់ផ្សេង:
+   cd Documents = ដើរចូលបន្តាត់ Documents
+   cd ..        = ដើរចេញក្រៅមួយជំហាន
+   cd ~         = ត្រឡាត់ទៅផ្ទះ (Home)
 ```
 
-##### `mkdir` — Make Directory (បorg org org org org org org Folder org org org org)
+##### `mkdir` — Make Directory (បង្កើត Folder ថ្មី)
 
 ```bash
-$ mkdir my-project              # បorg org org org org org org org Folder org org org org org
-$ mkdir css js images           # org org org org org org org org Folder org org org org org org org org org org org org org org org org org
-$ mkdir -p project/css/parts    # org org org org org Nested Folders
+$ mkdir my-project              # បង្កើត Folder មួយ
+$ mkdir css js images           # បង្កើត Folder ច្រើនក្នុងពេលតែមួយ
+$ mkdir -p project/css/parts    # បង្កើត Nested Folders
 ```
 
-##### `touch` — បorg org org org org org org File org org org org (macOS/Linux)
+##### `touch` — បង្កើត File ថ្មី (macOS/Linux)
 
 ```bash
-$ touch index.html                           # org org org org org org org org File org org org org org
-$ touch index.html style.css script.js       # org org org org org org org org Files org org org org org org org org org org org org org org org org org org
+$ touch index.html                           # បង្កើត File មួយ
+$ touch index.html style.css script.js       # បង្កើត Files ច្រើន
 
 # Windows (PowerShell):
 $ New-Item index.html
 ```
 
-##### `rm` — Remove (org org org)
+##### `rm` — Remove (លុប)
 
 ```bash
-# សorg org org org org org org org org org org org org! rm org org org org org org org org org org org org org org org org org org org (org org org org org org org org Recycle Bin)!
+# សូមប្រយ័ត្ន! rm លុបជាអចិន្ត្រៃយ៍ (មិនចូល Recycle Bin)!
 
-$ rm unwanted-file.txt         # org org File org org org
-$ rmdir empty-folder           # org org Folder org org org org
-$ rm -r old-project            # org org Folder org org Content org org org org org org org org org
+$ rm unwanted-file.txt         # លុប File មួយ
+$ rmdir empty-folder           # លុប Folder ទទេ
+$ rm -r old-project            # លុប Folder និង Content ទាំងអស់
 ```
 
-##### `cp` — Copy (org org org org)
+##### `cp` — Copy (ចម្លង)
 
 ```bash
-$ cp index.html backup.html           # org org org File
-$ cp style.css css/style.css          # org org org File org org Folder org org org org
-$ cp -r my-project my-project-backup  # org org org Folder org org org org org org org org
+$ cp index.html backup.html           # ចម្លង File
+$ cp style.css css/style.css          # ចម្លង File ទៅ Folder ផ្សេង
+$ cp -r my-project my-project-backup  # ចម្លង Folder ទាំងមូល
 ```
 
-##### `mv` — Move / Rename (org org org org org org org org org org org org org org org)
+##### `mv` — Move / Rename (ផ្លាស់ទី ឬ ប្តូរឈ្មោះ)
 
 ```bash
-$ mv style.css css/                    # org org org org File org org Folder org org org org
-$ mv old-name.html new-name.html      # org org org org org org org File
+$ mv style.css css/                    # ផ្លាស់ទី File ទៅ Folder ផ្សេង
+$ mv old-name.html new-name.html      # ប្តូរឈ្មោះ File
 ```
 
-##### `clear` — org org org org org Terminal Screen
+##### `clear` — សម្អាត Terminal Screen
 
 ```bash
 $ clear
 # Shortcut: Ctrl+L
 ```
 
-#### org org org org Commands
+#### សង្ខេប Commands
 
-| Command | មorg org org org | org org org org org org org org |
+| Command | មុខងារ | ឧទាហរណ៍ |
 |---------|--------|---------|
-| `pwd` | បorg org org org Location បorg org org org org org org | `pwd` |
-| `ls` | បorg org org org Files & Folders | `ls`, `ls -la` |
-| `cd` | org org org org org Location | `cd Documents`, `cd ..` |
-| `mkdir` | org org org org Folder | `mkdir my-project` |
-| `touch` | org org org org File | `touch index.html` |
-| `rm` | org org org org org File | `rm file.txt` |
-| `rm -r` | org org org org org Folder | `rm -r folder` |
-| `cp` | org org org org org org org File/Folder | `cp a.txt b.txt` |
-| `mv` | org org org org org org org org/org org org org org org org org org org org org org | `mv old.txt new.txt` |
-| `clear` | org org org org org org org org org Screen | `clear` |
+| `pwd` | បង្ហាញ Location បច្ចុប្បន្ន | `pwd` |
+| `ls` | បង្ហាញ Files & Folders | `ls`, `ls -la` |
+| `cd` | ផ្លាស់ទី Location | `cd Documents`, `cd ..` |
+| `mkdir` | បង្កើត Folder | `mkdir my-project` |
+| `touch` | បង្កើត File | `touch index.html` |
+| `rm` | លុប File | `rm file.txt` |
+| `rm -r` | លុប Folder | `rm -r folder` |
+| `cp` | ចម្លង File/Folder | `cp a.txt b.txt` |
+| `mv` | ផ្លាស់ទី/ប្តូរឈ្មោះ | `mv old.txt new.txt` |
+| `clear` | សម្អាត Screen | `clear` |
 
 #### Path (Absolute vs Relative)
 
 ```
-Absolute Path:
+Absolute Path (ផ្លូវពេញ):
 /Users/student/Documents/my-project/index.html
-→ org org org org org org org org Root (/)
-→ org org org org org org org org org org Location org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org
+→ ចាប់ផ្តើមពី Root (/)
+→ ដូចកាន់ Address ពេញលេញ មិនអាស្រ័យលើទីតាំងបច្ចុប្បន្ន
 
-Relative Path:
-./index.html         = File org org org org Folder org org org org org org org org org
-../style.css         = File org org org Folder org org org org org org org
-images/photo.jpg     = org org org Folder "images" org org org org org org org org org org org org
+Relative Path (ផ្លូវទាក់ទង):
+./index.html         = File ក្នុង Folder បច្ចុប្បន្ន
+../style.css         = File ក្នុង Folder មួយក្រៅ
+images/photo.jpg     = ក្នុង Folder "images"
 ```
 
 ---
 
 ### 4. Chrome DevTools
 
-#### Chrome DevTools ជorg org org org org org?
-- Chrome DevTools ជorg org org **org org org org org org org org org org org org org org org org org org org org org org org** org org org org org Chrome Browser
-- org org org org org org org Inspect HTML, CSS, JavaScript, Network Requests org org org org org org org
-- Developer org org org org org org org org org DevTools org org org org org org org org org org org org org Debug, Test org org org org org org org org org org org org org org org org org org
+#### Chrome DevTools ជាអ្វី?
+- Chrome DevTools ជា **ឧបករណ៍សម្រាប់ Developer** ក្នុង Chrome Browser
+- អាច Inspect HTML, CSS, JavaScript, Network Requests
+- Developer ប្រើ DevTools សម្រាប់ Debug, Test, និង Optimize
 
-#### org org org org org org org org org org DevTools
+#### របៀបបើក DevTools
 
-1. **Keyboard Shortcut:** F12 (Windows/Linux) org org org Cmd+Option+I (macOS)
-2. **Right-click:** Right-click org org org org org org Element → "Inspect"
+1. **Keyboard Shortcut:** F12 (Windows/Linux) ឬ Cmd+Option+I (macOS)
+2. **Right-click:** Right-click លើ Element ណាមួយ → "Inspect"
 3. **Menu:** Chrome Menu → More Tools → Developer Tools
 
-#### Tabs org org org org org org org org DevTools
+#### Tabs សំខាន់ៗក្នុង DevTools
 
 ##### Elements Tab — Inspect HTML & CSS
-- org org org org org org org org HTML Structure org org org org org org Web Page
-- org org org org org org org org org CSS Styles org org org org org org org org org org Element
-- Edit HTML/CSS org org org org org org org org org org org org org (Refresh org org org org org org org org org org org org org org org)
-- Hover org org org org org Element → Highlight org org org org org Page
+- មើល HTML Structure របស់ Web Page
+- មើលនិង Edit CSS Styles របស់ Element នីមួយៗ
+- Edit HTML/CSS បានបណ្តោះអាសន្ន (Refresh នឹងត្រឡាប់វិញ)
+- Hover លើ Element → Highlight លើ Page
 
 ##### Console Tab — JavaScript Console
-- org org org org org org org org org org org JavaScript org org org org org org org org org org org org org org
-- org org org org org Error Messages org org org JavaScript org org org org org org org org org org org org org org
-- Debug org org org org org org org org org org — org org org `console.log()`
-- org org org org org org org org org DOM — org org org org org org HTML Elements org org org JavaScript
+- រៀងដំណើរការ JavaScript ដោយផ្ទាល់
+- មើល Error Messages របស់ JavaScript
+- Debug ដោយប្រើ `console.log()`
+- ចូលដៅ DOM — អាចគ្រប់គ្រង HTML Elements ដោយ JavaScript
 
 ##### Network Tab — Monitor Requests
-- org org org org org org org HTTP Requests org org org org org org org org org org Browser org org org org org org org org org
-- org org org org org Status Codes (200 OK, 404 Not Found, 500 Error)
-- org org org org org Loading Time org org org org org org Resource org org org org org org org
-- org org org org org File Sizes — org org org org org org org org Optimize
+- មើល HTTP Requests ទាំងអស់ដែល Browser ផ្ញើ
+- មើល Status Codes (200 OK, 404 Not Found, 500 Error)
+- មើល Loading Time របស់ Resource នីមួយៗ
+- មើល File Sizes — សម្រាប់ Optimize
 
-#### DevTools Tabs org org org org org org org org org
+#### DevTools Tabs សង្ខេប
 
-| Tab | មorg org org org org org | org org org org org org org org org org org |
+| Tab | មុខងារ | ប្រើសម្រាប់ |
 |-----|--------|----------|
 | **Elements** | Inspect/Edit HTML & CSS | Layout & Style |
 | **Console** | Run JavaScript, See Errors | Debug & Test Code |
@@ -361,10 +360,10 @@ images/photo.jpg     = org org org Folder "images" org org org org org org org o
 
 ### 5. File & Folder Structure
 
-#### org org org org org org org File Structure org org org org org org org org?
-- Code org org org **org org org org org org org org org org org org** → org org org org org org org org org org org org org org org org org org
-- File Structure org org org org org org → Project org org org org org org org org org org org org org org org
-- Developer org org org org org org org org org org org org org File Structure Standard org org org org org org org org
+#### ហេតអ្វីត្រូវការ File Structure ល្អ?
+- Code ត្រូវ **រៀបចំឱ្យមានរបៀបរបប** → ងាយស្វែងរក និងងាយកែ
+- File Structure ល្អ → Project ងាយគ្រប់គ្រងបាន
+- Developer ទាំងអស់ត្រូវដឹង File Structure Standard
 
 ```
 Good Structure:               Bad Structure:
@@ -400,7 +399,7 @@ my-website/
     +-- custom-font.woff2
 ```
 
-#### org org org org org org org org org File Naming
+#### ច្បាប់ File Naming
 
 | Rule | Good | Bad |
 |------|------|-----|
@@ -412,9 +411,9 @@ my-website/
 
 ---
 
-### 6. បorg org org org org org org org Project "Hello World"
+### 6. បង្កើត Project "Hello World"
 
-#### Step 1: org org org org org org org Project Folder org org org org org Terminal
+#### Step 1: បង្កើត Project Folder ដោយប្រើ Terminal
 
 ```bash
 $ cd ~/Documents
@@ -426,14 +425,14 @@ $ ls
 css/    images/    index.html    js/
 ```
 
-#### Step 2: org org org org org Project org org org org VS Code
+#### Step 2: បើក Project ក្នុង VS Code
 
 ```bash
 $ code .
-# "." = org org org org org org org org Folder org org org org org org org org org org org
+# "." = បើក Folder បច្ចុប្បន្ន
 ```
 
-#### Step 3: org org org org org org org org org index.html
+#### Step 3: សរសេរ Code ក្នុង index.html
 
 ```html
 <!DOCTYPE html>
@@ -475,20 +474,20 @@ $ code .
 </html>
 ```
 
-##### org org org org org org org org org Code:
+##### ពន្យល់ Code:
 ```
-<!DOCTYPE html>          ← org org org org org org org Browser org org org org org org org HTML5
-<html lang="en">         ← Root Element org org org org org org org org org org org org org org org
+<!DOCTYPE html>          ← ប្រាប់ Browser ថាជា HTML5
+<html lang="en">         ← Root Element
 <head>                   ← Meta Data, Title, CSS Link
-<meta charset="UTF-8">   ← Support org org org org org org org org org org org org org
-<meta name="viewport">   ← Responsive org org org Mobile
-<title>                  ← Title org org org org org org org Browser Tab
-<link rel="stylesheet">  ← org org org org org org CSS File
-<body>                   ← Content org org org org org org org org org org org org org org org org org org
-<script src="">          ← org org org org org org JavaScript File
+<meta charset="UTF-8">   ← Support អក្សរគ្រប់យ៉ាង
+<meta name="viewport">   ← Responsive សម្រាប់ Mobile
+<title>                  ← Title បង្ហាញលើ Browser Tab
+<link rel="stylesheet">  ← ភ្ជាប់ CSS File
+<body>                   ← Content ដែលបង្ហាញ
+<script src="">          ← ភ្ជាប់ JavaScript File
 ```
 
-#### Step 4: org org org org org org org CSS (css/style.css)
+#### Step 4: សរសេរ CSS (css/style.css)
 
 ```css
 /* Reset & Base Styles */
@@ -565,7 +564,7 @@ footer {
 }
 ```
 
-#### Step 5: សorg org org org org org org org JavaScript (js/script.js)
+#### Step 5: សរសេរ JavaScript (js/script.js)
 
 ```javascript
 // My First JavaScript!
@@ -577,30 +576,30 @@ console.log("Current Date:", now.toLocaleDateString());
 console.log("Current Time:", now.toLocaleTimeString());
 ```
 
-#### Step 6: org org org org org org org org org org Live Server
+#### Step 6: បើកដោយ Live Server
 
-1. org org org org VS Code → org org org org org index.html
-2. Right-click org org org Editor → "Open with Live Server"
-3. Browser org org org org org org org org org org org: http://127.0.0.1:5500
-4. org org org org org org Website org org org org org org org org org!
-5. org org org F12 org org org org org Console Tab
-6. org org org org org org "Hello World! My website is working!"
+1. ចូល VS Code → បើក index.html
+2. Right-click ក្នុង Editor → "Open with Live Server"
+3. Browser នឹងបើកស្វ័យប្រវត្តិ: http://127.0.0.1:5500
+4. មើល Website របស់អ្នក!
+5. ចុច F12 បើក Console Tab
+6. មើល "Hello World! My website is working!"
 
 ---
 
-## 📊 org org org org org org (Summary)
+## 📊 សង្ខេប (Summary)
 
 ### Key Concepts
 
 | Concept | Description |
 |---------|-------------|
-| VS Code | Code Editor ពorg org org org org org org org org org org org org org org org org org org |
-| Extensions | Plugin org org org org org org org Feature org org org org VS Code |
-| Live Server | Auto-reload Browser org org org Save |
-| Prettier | Auto-format Code org org org org org org org org org org org |
-| Terminal | org org org org org org org org org org org org org org Text Commands |
-| DevTools | Chrome org org org org org org org org org org Inspect & Debug |
-| File Structure | org org org org org org org org org org Files & Folders org org org Project |
+| VS Code | Code Editor ពេញនិយមបំផុតសម្រាប់ Developer |
+| Extensions | Plugin បន្ថែម Feature ទៅ VS Code |
+| Live Server | Auto-reload Browser ពេល Save |
+| Prettier | Auto-format Code ឱ្យស្អាត |
+| Terminal | គ្រប់គ្រងកុំព្យូទ័រដោយ Text Commands |
+| DevTools | Chrome ឧបករណ៍សម្រាប់ Inspect & Debug |
+| File Structure | រៀបចំ Files & Folders ក្នុង Project |
 
 ### Flow
 
@@ -610,29 +609,29 @@ mkdir project → cd project → mkdir css js images → touch files → code . 
 
 ---
 
-## ✏org org org org org org org org (Exercises)
+## ✏️ លំហាត់ (Exercises)
 
-### org org org org org org org 1: org org org org org org VS Code + Extensions
+### លំហាត់ទី 1: ដំឡើង VS Code + Extensions
 
-1. Download org org org org org org org VS Code
-2. org org org org org org org Extensions: Live Server, Prettier, Auto Rename Tag, Auto Close Tag, HTML CSS Support
+1. Download និងដំឡើង VS Code
+2. ដំឡើង Extensions: Live Server, Prettier, Auto Rename Tag, Auto Close Tag, HTML CSS Support
 3. Setup "Format On Save"
-4. Screenshot org org org org org org org
+4. Screenshot បង្ហាញលទ្ធផល
 
 ---
 
-### org org org org org org org 2: Terminal Practice
+### លំហាត់ទី 2: Terminal Practice
 
-org org org org Commands org org org org org org org org org org org Terminal:
+អនុវត្ត Commands ខាងក្រោមក្នុង Terminal:
 
 ```bash
-$ pwd                                          # org org org org org org Location
-$ cd ~/Desktop                                 # org org org org org org Desktop
-$ mkdir practice                               # org org org org org org Folder
-$ cd practice                                  # org org org org org org org org org org
-$ mkdir html css js                            # org org org org org org Folders
+$ pwd                                          # បង្ហាញ Location
+$ cd ~/Desktop                                 # ចូលទៅ Desktop
+$ mkdir practice                               # បង្កើត Folder
+$ cd practice                                  # ចូលចូលក្នុង
+$ mkdir html css js                            # បង្កើត Folders
 $ touch index.html html/about.html css/style.css js/app.js
-$ ls                                           # org org org org org org org org org org org org org
+$ ls                                           # បង្ហាញលទ្ធផល
 $ cp index.html backup.html                    # Copy file
 $ ls
 $ rm backup.html                               # Delete file
@@ -641,9 +640,9 @@ $ ls
 
 ---
 
-### org org org org org org org 3: org org org org org org Folder Structure
+### លំហាត់ទី 3: បង្កើត Folder Structure
 
-org org org org Terminal org org org org org org Folder Structure org org org org org org org:
+ប្រើ Terminal បង្កើត Folder Structure ខាងក្រោម:
 
 ```
 my-portfolio/
@@ -660,36 +659,36 @@ my-portfolio/
 
 ---
 
-### org org org org org org org 4: org org org org HTML File org org org org org org Live Server
+### លំហាត់ទី 4: បើក HTML File ដោយ Live Server
 
-1. org org org `my-portfolio/index.html` org org org VS Code
-2. org org org HTML: Title, `<h1>`, `<p>`, `<ul>` org org org Skills
-3. org org org Live Server org org org org Browser
-4. org org org Chrome DevTools (F12):
+1. បើក `my-portfolio/index.html` ក្នុង VS Code
+2. សរសេរ HTML: Title, `<h1>`, `<p>`, `<ul>` សម្រាប់ Skills
+3. បើក Live Server មើលក្នុង Browser
+4. បើក Chrome DevTools (F12):
    - **Elements Tab**: Inspect HTML Elements
-   - **Console Tab**: org org org `console.log("Hello!")`
-   - **Network Tab**: org org org Requests
+   - **Console Tab**: សាកល្បង `console.log("Hello!")`
+   - **Network Tab**: មើល Requests
 
 ---
 
-## 🏠 org org org org org org org org org (Homework)
+## 🏠 ការងារផ្ទះ (Homework)
 
 ### Task 1: Shortcut Practice
-org org org org org VS Code Shortcuts org org org org org org org 10 org org org org:
+អនុវត្ត VS Code Shortcuts ខាងក្រោម 10 ដង:
 `Ctrl+S`, `Ctrl+P`, `Ctrl+Shift+P`, `` Ctrl+` ``, `Ctrl+/`, `Alt+Up/Down`, `Ctrl+D`, `Ctrl+Shift+F`, `Ctrl+Z`, `Ctrl+Shift+Z`
 
 ### Task 2: Terminal Exploration
-1. org org org org org org Home Directory org org org org org org org Folders (`ls`)
-2. org org org org org org Folder "terminal-practice" org org org org org Sub-folders 5 org org org org org org
-3. org org org org org org File org org org org org org org org org org Sub-folder
+1. បង្ហាញ Home Directory និង Folders ទាំងអស់ (`ls`)
+2. បង្កើត Folder "terminal-practice" និង Sub-folders 5
+3. បង្កើត File ក្នុង Sub-folder នីមួយៗ
 4. Practice `cd`, `ls`, `pwd`, `mkdir`, `touch`, `rm`
 
 ### Task 3: DevTools Exploration
-1. org org org org org Website org org org org org org org org org (google.com)
-2. org org org org org DevTools (F12)
-3. **Elements Tab**: Edit Heading text org org org Color
-4. **Console Tab**: org org org org org `document.title` org org org `alert("Hello!")`
-5. **Network Tab**: Refresh page org org org org org org Requests
+1. បើក Website មួយ (google.com)
+2. បើក DevTools (F12)
+3. **Elements Tab**: Edit Heading text និង Color
+4. **Console Tab**: សាកល្បង `document.title` និង `alert("Hello!")`
+5. **Network Tab**: Refresh page មើល Requests
 6. Screenshot
 
 ---
@@ -708,15 +707,15 @@ org org org org org VS Code Shortcuts org org org org org org org 10 org org org
 
 ---
 
-## ❓ org org org org org org org org org org org org org org org org org org org (Quiz)
+## ❓ សំណូរឆែកចំណេហដឹង (Quiz)
 
-1. Code Editor ជorg org org org org org org org? org org org org org org org org org org VS Code?
-2. Extension ជorg org org org org org org org? org org org Extensions 3 org org org org org org org org org org org org Web Development?
-3. Live Server org org org org org org org org org org org org org org org?
-4. Prettier org org org org org org org org org org? របorg org org org org org org org org Format on Save?
-5. Terminal ជorg org org org org org org org? org org org org org org org org org org org Developer org org org Terminal?
-6. org org org org org org org org org org org org org org `pwd`, `ls`, `cd`, `mkdir`, `touch`, `rm`?
-7. Absolute Path org org org org Relative Path org org org org org org org org org org org org org org org?
-8. Chrome DevTools ជorg org org org org org org org org? org org org org org org org org org Elements, Console, Network Tab?
-9. org org org org org org org org File Structure org org org org org org org org org org? org org org org org org org org 3 org org org org org org org org?
-10. org org org org org Web Project org org org org org org org org org org org org org org org index.html org org org org org org org org org org org?
+1. Code Editor ជាអ្វី? ហេតអ្វីប្រើ VS Code?
+2. Extension ជាអ្វី? ប្រាប់ Extensions 3 សម្រាប់ Web Development?
+3. Live Server ដំណើរការយ៉ាងដូចម្តេច?
+4. Prettier ជាអ្វី? របៀប Setup Format on Save?
+5. Terminal ជាអ្វី? ហេតអ្វី Developer ប្រើ Terminal?
+6. ពន្យល់មុខងារ: `pwd`, `ls`, `cd`, `mkdir`, `touch`, `rm`?
+7. Absolute Path និង Relative Path ខុសគ្នាយ៉ាងដូចម្តេច?
+8. Chrome DevTools ជាអ្វី? ពន្យល់ Elements, Console, Network Tab?
+9. ហេតអ្វី File Structure សំខាន់? ប្រាប់ 3 ច្បាប់?
+10. ក្នុង Web Project index.html សំខាន់យ៉ាងដូចម្តេច?
