@@ -208,7 +208,7 @@
   - Logical: `&&`, `||`, `!`
 - Conditionals (`if`, `else if`, `else`, `switch`)
 - Loops (`for`, `while`, `do...while`, `for...of`)
-- `console.log()` & Basic Debugging
+- `console.log("hello")` & Basic Debugging
 
 ### លំហាត់ (Exercise)
 - សរសេរ Program គណនា Grade ពី Score
@@ -240,6 +240,7 @@
   - Object destructuring (intro)
 - **Scope** (Global, Local, Block)
 - **String Methods** (`toUpperCase`, `toLowerCase`, `slice`, `split`, `trim`, `includes`)
+
 
 ### លំហាត់ (Exercise)
 - សរសេរ Function គណនា Area នៃ Rectangle & Circle
