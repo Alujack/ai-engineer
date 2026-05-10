@@ -50,49 +50,109 @@
 
 ## Lesson 12: JavaScript ES6+ (Part 2)
 
+> 📄 **Detailed Lesson:** [lessons/part2/lesson12-javascript-es6-part2.md](lessons/part2/lesson12-javascript-es6-part2.md)
+
 ### គោលបំណង (Objectives)
-- យល់ដឹងពី Asynchronous JavaScript
-- អាចប្រើ Array Methods សម្រាប់ Data Manipulation
+- យល់ដឹង និងប្រើ **Higher-Order Array Methods** សម្រាប់ Data Manipulation
+- យល់ភាពខុសគ្នារវាង **Sync vs Async** JavaScript
+- អាចប្រើ **Promises** និង **`async/await`** សម្រាប់ Async Operations
+- បែងចែក Code ទៅជា **Modules** សម្រាប់ Project ធំ
+- Handle **Errors** ត្រឹមត្រូវដោយប្រើ `try/catch`
 
 ### មាតិកា (Topics)
-- **Array Methods (Higher-Order Functions)**
-  - `map()` — Transform each item
-  - `filter()` — Filter items by condition
-  - `reduce()` — Reduce to single value
-  - `find()` — Find first match
-  - `some()` / `every()` — Check conditions
-  - `sort()` — Sort items
-  - Chaining methods together
-- **Promises**
+
+#### 🔹 Part A — Array Methods (Higher-Order Functions)
+- **`map()`** — Transform each item → Return new Array
   ```js
-  const promise = new Promise((resolve, reject) => { ... });
-  promise.then(result => ...).catch(error => ...);
+  const doubled = numbers.map(n => n * 2);
+  const names = users.map(u => u.name);
   ```
-- **Async / Await**
+- **`filter()`** — Keep items matching condition
+  ```js
+  const adults = users.filter(u => u.age >= 18);
+  ```
+- **`reduce()`** — Reduce to single value (sum, group, flatten)
+  ```js
+  const total = items.reduce((sum, item) => sum + item.price, 0);
+  ```
+- **`find()` / `findIndex()`** — Find first match
+- **`some()` / `every()`** — Check conditions (any/all)
+- **`sort()`** — Sort with comparator function
+  ```js
+  arr.sort((a, b) => a - b);  // ascending
+  ```
+- **Method Chaining** — Combine multiple methods
+  ```js
+  products
+    .filter(p => p.inStock)
+    .sort((a, b) => b.price - a.price)
+    .map(p => p.name);
+  ```
+
+#### 🔹 Part B — Asynchronous JavaScript
+- **Sync vs Async** — Why we need async
+- **Promises** — Pending → Fulfilled / Rejected
+  ```js
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve(data), 1000);
+  });
+  promise.then(result => ...).catch(error => ...).finally(() => ...);
+  ```
+- **`Promise.all()`** — Run promises in parallel
+  ```js
+  const [users, products] = await Promise.all([fetchUsers(), fetchProducts()]);
+  ```
+- **`Promise.allSettled()` / `Promise.race()`**
+- **`async / await`** — Cleaner syntax for promises
   ```js
   const fetchData = async () => {
     try {
       const response = await fetch(url);
       const data = await response.json();
+      return data;
     } catch (error) {
       console.error(error);
     }
   };
   ```
-- **Modules (import / export)**
+- **Sequential vs Parallel** Async — Performance optimization
+- **Error Handling** (`try`, `catch`, `finally`, `throw`)
+
+#### 🔹 Part C — Modules
+- **Named Export / Import**
   ```js
+  // utils.js
   export const helper = () => { ... };
-  import { helper } from './utils.js';
+  export const PI = 3.14;
+
+  // main.js
+  import { helper, PI } from './utils.js';
+  import { helper as myHelper } from './utils.js';  // Rename
+  import * as utils from './utils.js';              // Import All
   ```
-- **Error Handling** (`try`, `catch`, `finally`)
+- **Default Export / Import**
+  ```js
+  // User.js
+  export default class User { ... }
+
+  // main.js
+  import User from './User.js';   // No braces for default
+  ```
+- **Mixing Default & Named Exports**
+- **`<script type="module">`** in HTML
 
 ### លំហាត់ (Exercise)
-- បង្កើត Array of Products ហើយប្រើ map, filter, reduce ដើម្បី:
+- បង្កើត Array of Products ហើយប្រើ `map`, `filter`, `reduce` ដើម្បី:
   - បង្ហាញ Product Names ទាំងអស់
   - Filter Products ដែល Price > $50
   - គណនា Total Price
-- សរសេរ Async Function ដែល Simulate API Call ដោយប្រើ setTimeout + Promise
-- បង្កើត Module File ហើយ Import/Export Functions
+  - Group by Category (`reduce`)
+- ប្រើ **Method Chaining** ដើម្បីរក Top 3 Products តម្រៀបតាម Price
+- សរសេរ Async Function ដែល Simulate API Call ដោយប្រើ `setTimeout` + `Promise`
+- Convert `.then()` Chain ទៅជា `async/await`
+- ប្រើ **`Promise.all()`** ដើម្បី Fetch ច្រើន Endpoints ដំណាលគ្នា
+- បង្កើត Module Files (`math.js`, `stringUtils.js`) ហើយ Import/Export Functions
+- បង្កើត **Mini Library System** ដោយប្រើ Skills ទាំងអស់
 
 ---
 
