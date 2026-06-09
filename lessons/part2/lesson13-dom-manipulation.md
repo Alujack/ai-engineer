@@ -462,7 +462,7 @@ input.addEventListener("input", (e) => {
   <li>Item 3</li>
 </ul>
 ```
-
+sew
 ```js
 const list = document.querySelector("#list");
 
