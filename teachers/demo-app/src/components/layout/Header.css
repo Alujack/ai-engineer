@@ -1,0 +1,41 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  border-bottom: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    padding: 12px 20px;
+  }
+}
+
+.site-header .brand {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 8px;
+}
+
+.site-header nav a {
+  color: var(--text);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+
+  &:hover {
+    background: var(--social-bg);
+  }
+
+  &.active {
+    color: var(--accent);
+    background: var(--accent-bg);
+  }
+}
