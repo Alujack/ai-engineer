@@ -1,4 +1,4 @@
-import { StudentList } from '@/features/students'
+import { StudentList } from '@/components/features/students'
 
 export default function StudentsPage() {
   return (
