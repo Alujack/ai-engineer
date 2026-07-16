@@ -1,6 +1,7 @@
-import { useState } from "react";
+import React from "react";
+import { useState} from "react";
 
-export default function CounterApp() {
+const  CounterApp = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -30,3 +31,4 @@ export default function CounterApp() {
     </div>
   );
 }
+export default CounterApp;

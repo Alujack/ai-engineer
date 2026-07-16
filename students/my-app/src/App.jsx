@@ -1,48 +1,76 @@
-import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Card from "./components/Card";
-import Studentlist from "./components/Studentlist";
-import ReusableButton from "./components/ReusableButton";
-import Recipebook from "./components/Recipebook";
-import { KhmerTokenizer, splitKcc, normalize, isKhmer } from "kh-tokenizer";
+import { useState } from "react";
+import CounterApp from "./components/CounterApp";
+import LoginForm from "./components/LoginForm";
+import ConditionalUI from "./components/ConditionalUI";
 
 export default function App() {
-  // console.log("KhmerTokenizer:", KhmerTokenizer);
-  const tk = new KhmerTokenizer(); // embedded 59k-word dictionary, forward max-match
-  const segments = tk.segment(`💻 5 Skills ដែល Programmer គួរតែមាន
+  const [activeTab, setActiveTab] = useState("counter");
 
-1️⃣ Problem Solving
-រៀនគិតជាដំណាក់កាល និងដោះស្រាយបញ្ហាដោយមានតក្កវិជ្ជា។
-
-2️⃣ 💻 Programming Fundamentals
-ចេះមូលដ្ឋាន HTML, CSS, JavaScript និងយល់ពី Logic ក្នុងការសរសេរ Code។
-
-3️⃣ Communication & Teamwork
-អាចធ្វើការជាមួយក្រុមការងារ និងទំនាក់ទំនងបានច្បាស់លាស់។
-
-4️⃣ AI Tools & Productivity
-ចេះប្រើ ChatGPT, Claude, Gemini និង AI Coding Assistant ដើម្បីសរសេរ Code និង Debug កាន់តែលឿន។
-
-5️⃣ Continuous Learning
-បច្ចេកវិទ្យាផ្លាស់ប្តូរជានិច្ច ដូច្នេះ Programmer ត្រូវបន្តរៀន និងអភិវឌ្ឍជំនាញថ្មីៗជានិច្ច។`);
-  console.log("Segments:", segments);
-  console.log("iskhmer", isKhmer("💻 5 Skills ដែល Programmer គួរតែមាន"));
-  console.log("normalize", normalize("ប៊ូតុងចម្បង"));
-  console.log("splitKcc", splitKcc("ប៊ូតុងចម្បង"));
+  const tabStyle = (tab) => ({
+    flex: 1,
+    padding: "12px",
+    border: "none",
+    cursor: "pointer",
+    borderRadius: "8px",
+    fontWeight: "bold",
+    backgroundColor: activeTab === tab ? "#2563eb" : "#f1f5f9",
+    color: activeTab === tab ? "#fff" : "#333",
+    transition: "0.3s",
+  });
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>My React Exercises</h1>
-      <hr />
+    <div
+      style={{
+        maxWidth: "900px",
+        margin: "30px auto",
+        padding: "20px",
+        fontFamily: "Arial",
+      }}
+    >
+      <h1 style={{ textAlign: "center" }}>🚀 My React Exercises</h1>
 
-      {/* បើកដំណើរការលំហាត់ម្តងមួយៗដើម្បីតេស្ត */}
-      <CounterApp />
-      <CharacterCounter />
-      <LoginForm />
-      <ConditionalUI />
-      <TodoApp />
-      <ShoppingCart />
+      {/* Tabs */}
+      <div
+        style={{  
+          display: "flex",
+          gap: "10px",
+          margin: "20px 0",
+        }}
+      >
+        <button
+          style={tabStyle("counter")}
+          onClick={() => setActiveTab("counter")}
+        >
+          🔢 Counter
+        </button>
+
+        <button style={tabStyle("login")} onClick={() => setActiveTab("login")}>
+          🔐 Login
+        </button>
+
+        <button
+          style={tabStyle("conditional")}
+          onClick={() => setActiveTab("conditional")}
+        >
+          🎨 Conditional UI
+        </button>
+      </div>
+
+      {/* Content */}
+      <div
+        style={{
+          background: "#fff",
+          borderRadius: "12px",
+          padding: "20px",
+          boxShadow: "0 5px 15px rgba(0,0,0,.1)",
+        }}
+      >
+        {activeTab === "counter" && <CounterApp />}
+
+        {activeTab === "login" && <LoginForm />}
+
+        {activeTab === "conditional" && <ConditionalUI />}
+      </div>
     </div>
   );
 }
