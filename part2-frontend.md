@@ -10,10 +10,12 @@
 ## Lesson 11: JavaScript ES6+ (Part 1)
 
 ### គោលបំណង (Objectives)
+
 - យល់ដឹងពី Modern JavaScript Syntax
 - អាចសរសេរ Code ស្អាត និង ខ្លី
 
 ### មាតិកា (Topics)
+
 - **Arrow Functions**
   ```js
   const add = (a, b) => a + b;
@@ -42,6 +44,7 @@
 - **Ternary Operator** (`condition ? true : false`)
 
 ### លំហាត់ (Exercise)
+
 - Refactor Lesson 10 code ទៅជា ES6+ syntax
 - សរសេរ 5 Functions ដោយប្រើ Arrow Functions
 - ប្រើ Destructuring ដើម្បីទាញ Data ពី Objects & Arrays
@@ -53,6 +56,7 @@
 > 📄 **Detailed Lesson:** [lessons/part2/lesson12-javascript-es6-part2.md](lessons/part2/lesson12-javascript-es6-part2.md)
 
 ### គោលបំណង (Objectives)
+
 - យល់ដឹង និងប្រើ **Higher-Order Array Methods** សម្រាប់ Data Manipulation
 - យល់ភាពខុសគ្នារវាង **Sync vs Async** JavaScript
 - អាចប្រើ **Promises** និង **`async/await`** សម្រាប់ Async Operations
@@ -62,6 +66,7 @@
 ### មាតិកា (Topics)
 
 #### 🔹 Part A — Array Methods (Higher-Order Functions)
+
 - **`map()`** — Transform each item → Return new Array
   ```js
   const doubled = numbers.map(n => n * 2);
@@ -90,6 +95,7 @@
   ```
 
 #### 🔹 Part B — Asynchronous JavaScript
+
 - **Sync vs Async** — Why we need async
 - **Promises** — Pending → Fulfilled / Rejected
   ```js
@@ -119,6 +125,7 @@
 - **Error Handling** (`try`, `catch`, `finally`, `throw`)
 
 #### 🔹 Part C — Modules
+
 - **Named Export / Import**
   ```js
   // utils.js
@@ -142,6 +149,7 @@
 - **`<script type="module">`** in HTML
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត Array of Products ហើយប្រើ `map`, `filter`, `reduce` ដើម្បី:
   - បង្ហាញ Product Names ទាំងអស់
   - Filter Products ដែល Price > $50
@@ -159,10 +167,12 @@
 ## Lesson 13: DOM Manipulation
 
 ### គោលបំណង (Objectives)
+
 - អាចប្រើ JavaScript ដើម្បីផ្លាស់ប្តូរ HTML/CSS
 - យល់ដឹងពី Event Handling
 
 ### មាតិកា (Topics)
+
 - **Selecting Elements**
   - `document.getElementById()`
   - `document.querySelector()` / `querySelectorAll()`
@@ -185,6 +195,7 @@
   - JSON.stringify() / JSON.parse()
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត Todo List (Add, Delete, Mark Complete)
 - បង្កើត Dark/Light Mode Toggle
 - បង្កើត Counter App (Increment, Decrement, Reset)
@@ -195,10 +206,12 @@
 ## Lesson 14: Git & GitHub
 
 ### គោលបំណង (Objectives)
+
 - អាចប្រើ Git សម្រាប់ Version Control
 - អាចប្រើ GitHub សម្រាប់ រក្សាទុក Code Online
 
 ### មាតិកា (Topics)
+
 - **Git ជាអ្វី? ហេតុអ្វីត្រូវប្រើ?**
 - **Git មូលដ្ឋាន**
   - `git init` — ចាប់ផ្តើម Repository
@@ -221,6 +234,7 @@
 - **README.md** — Project Documentation
 
 ### លំហាត់ (Exercise)
+
 - ដាក់ Mini Project ពី Part 1 ឡើង GitHub
 - បង្កើត Branch ថ្មី, ផ្លាស់ប្តូរ Code, Merge ត្រឡប់ main
 - Clone Repository របស់គេម្នាក់ហើយ Explore
@@ -230,10 +244,12 @@
 ## Lesson 15: React មូលដ្ឋាន
 
 ### គោលបំណង (Objectives)
+
 - យល់ដឹងពី React និង Component-Based Architecture
 - អាចបង្កើត React App ដំបូង
 
 ### មាតិកា (Topics)
+
 - **React ជាអ្វី? ហេតុអ្វីប្រើ React?**
   - SPA (Single Page Application)
   - Component-Based Architecture
@@ -258,6 +274,7 @@
   - Default Props
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត React App ដំបូងជាមួយ Vite
 - បង្កើត Components: Header, Footer, Card
 - បង្កើត StudentCard Component ដែលទទួល Props (name, age, grade)
@@ -268,10 +285,12 @@
 ## Lesson 16: React State & Events
 
 ### គោលបំណង (Objectives)
+
 - យល់ដឹងពី State Management ក្នុង React
 - អាច Handle User Events
 
 ### មាតិកា (Topics)
+
 - **useState Hook**
   ```jsx
   const [count, setCount] = useState(0);
@@ -295,6 +314,7 @@
 - **Controlled Components** (Form inputs with state)
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត Counter App (Increment, Decrement, Reset)
 - បង្កើត Todo App (Add, Delete, Toggle Complete)
 - បង្កើត Login Form (Controlled Components)
@@ -304,10 +324,12 @@
 ## Lesson 17: React Hooks កម្រិតខ្ពស់
 
 ### គោលបំណង (Objectives)
+
 - អាចប្រើ useEffect សម្រាប់ Side Effects
 - យល់ដឹងពី Hooks ផ្សេងៗ
 
 ### មាតិកា (Topics)
+
 - **useEffect**
   ```jsx
   // Run on every render
@@ -339,6 +361,7 @@
   - Example: `useLocalStorage`, `useToggle`
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត App ដែល Fetch Data ពី API ដោយប្រើ useEffect
 - បង្កើត Theme Context (Dark/Light Mode) ដោយប្រើ useContext
 - បង្កើត Custom Hook `useLocalStorage`
@@ -348,10 +371,12 @@
 ## Lesson 18: React Router
 
 ### គោលបំណង (Objectives)
+
 - អាចបង្កើត Multi-Page Navigation ក្នុង React
 - យល់ដឹងពី Client-Side Routing
 
 ### មាតិកា (Topics)
+
 - **Install React Router**
   ```bash
   npm install react-router-dom
@@ -380,6 +405,7 @@
   - Redirecting unauthenticated users
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត Multi-Page App (Home, About, Products, Contact)
 - បង្កើត Product Detail Page ដោយប្រើ Dynamic Route (`/products/:id`)
 - បង្កើត Layout ជាមួយ Navbar & Footer ដែលប្រើ Nested Routes
@@ -389,10 +415,12 @@
 ## Lesson 19: API Integration
 
 ### គោលបំណង (Objectives)
+
 - អាចភ្ជាប់ React App ជាមួយ REST API
 - Handle Loading, Error, and Success States
 
 ### មាតិកា (Topics)
+
 - **Fetch API (Review)**
   ```js
   const response = await fetch('https://api.example.com/data');
@@ -423,6 +451,7 @@
   - TMDB (Movies)
 
 ### លំហាត់ (Exercise)
+
 - បង្កើត Weather App (ស្វែងរក Weather តាម City Name)
 - បង្កើត Movie Search App (ប្រើ TMDB API)
 - បង្កើត User Directory (Fetch Users & Display Cards)
@@ -432,10 +461,12 @@
 ## Lesson 20: Frontend Project Workshop
 
 ### គោលបំណង (Objectives)
+
 - បង្កើត Project ពេញលេញមួយដោយប្រើ Skills ទាំងអស់ពី Part 2
 - Practice Project Planning & Execution
 
 ### មាតិកា (Topics)
+
 - **Project Planning**
   - Wireframe / Sketch
   - Component Tree Planning
@@ -452,12 +483,14 @@
   - File Organization
 
 ### Project Options (ជ្រើសរើស 1)
+
 1. **Movie Explorer** — Search, Browse, Favorites (TMDB API)
 2. **Recipe Finder** — Search Recipes, View Details (MealDB API)
 3. **GitHub Profile Viewer** — Search Users, View Repos (GitHub API)
 4. **News Reader** — Browse News by Category (NewsAPI)
 
 ### វាយតម្លៃ (Evaluation)
+
 - [ ] React Components ច្បាស់លាស់ (Reusable)
 - [ ] State Management ត្រឹមត្រូវ
 - [ ] API Integration ដំណើរការល្អ
