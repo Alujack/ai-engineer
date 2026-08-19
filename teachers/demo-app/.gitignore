@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Env Variables — កុំ Commit .env
+.env
+.env.local

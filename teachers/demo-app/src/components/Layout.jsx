@@ -10,7 +10,7 @@ const Layout = () => {
                 <Outlet />
             </main>
             <footer style={{ padding: "10px 20px", backgroundColor: "#f0f0f0", textAlign: "center" }}>
-                <p>© 2026 AI Engineer Class — Lesson 18: React Router</p>
+                <p>© 2026 AI Engineer Class — Lessons 16 · 18 · 19</p>
             </footer>
         </div>
     )

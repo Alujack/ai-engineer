@@ -1,16 +1,13 @@
-# React + Vite
+# Demo App — AI Engineer Class (Part 2)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Teaching demo សម្រាប់ **Lesson 16 (State & Events)**, **Lesson 18 (React Router)** និង **Lesson 19 (API Integration)**។
 
-Currently, two official plugins are available:
+```bash
+npm install
+cp .env.example .env
+npm run dev     # http://localhost:5173
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 លំដាប់បង្រៀន, Route Map, Live-code Demo និង Troubleshooting សូមមើល **[TEACHING-GUIDE.md](TEACHING-GUIDE.md)**។
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Stack: React 19 · Vite 8 · react-router-dom 7 · axios · JSONPlaceholder API
